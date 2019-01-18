@@ -144,7 +144,7 @@ button {
 
 
 
-/*SECTION TWO*/
+/*SECTION PICTURE*/
 
 
 .section__galery {
@@ -156,19 +156,33 @@ button {
 
 .chair {
     width: 33%;
+    position: relative;
 
 }
 
 
+.chair span {
+    bottom: 68px;
+    left: 20px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .2);
+
+}
 
 
 .all_inputs {
     width: 34%;
     border: 1px solid lightgray;
+
 }
 
 h3 {
     font-weight: bold;
     border-bottom: 4px solid #27C7AB;
 
+}
+
+
+.price__list {
+    background-color: lightgray;
 }
