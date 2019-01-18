@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: ralewa, sans-serif;
+    font-family: raleway, sans-serif;
 }
 
 
 @font-face {
-    font-family: 'ralewa';
+    font-family: 'raleway';
     src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
     url('../fonts/raleway-bold-webfont.woff') format('woff');
     font-weight: bold;
@@ -35,9 +35,19 @@
 }
 
 
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
 
 
-.main {
+/*HEAD*/
+
+header {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -47,7 +57,7 @@
 
 
 .containet {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 
 }
@@ -57,29 +67,108 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 40px;
 }
 
 .containet__menu {
     display: flex;
 }
 
-/*.containet__menu__link {
-    display: flex;
 
-}*/
 
 h1 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 .color {
     color: #27C7AB;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
     color: white;
     margin-left: 15px;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+/*HEAD*/
+
+
+/*SECTION ONE*/
+
+.section_one {
+    background-image: linear-gradient(white, lightgray);
+    display: flex;
+}
+
+.content {
+    display: flex;
+
+
+}
+
+.containet__img {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.containet__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+
+h2 {
+    margin: 50px 0 30px 0;
+    font-size: 45px;
+}
+
+button {
+    background-color: #27C7AB;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    width: 170px;
+    height: 30px;
+    margin-top: 30px;
+
+}
+
+/*SECTION ONE*/
+
+
+
+
+/*SECTION TWO*/
+
+
+.section__galery {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+.chair {
+    width: 33%;
+
+}
+
+
+
+
+.all_inputs {
+    width: 34%;
+    border: 1px solid lightgray;
+}
+
+h3 {
+    font-weight: bold;
+    border-bottom: 4px solid #27C7AB;
+
 }
