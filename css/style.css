@@ -447,3 +447,47 @@ sup {
     background-color: #ffffff;
     height: 700px;
 }
+
+.contact__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 400px;
+    justify-content: space-between;
+    padding-top: 40px;
+
+}
+
+::-webkit-input-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+    font-size: 30px;
+
+}
+
+::-moz-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+
+}
+
+::-ms-input-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+    border-color: #27C7AB;
+    font-family: raleway, sans-serif;
+    padding: 10px 0 10px 10px;
+}
+
+input {
+    border-color: #27C7AB;
+    height: 70px;
+    font-family: raleway, sans-serif;
+    padding: 10px 0 10px 10px;
+}
