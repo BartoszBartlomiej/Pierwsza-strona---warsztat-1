@@ -19,6 +19,12 @@
                 <ul class="containet__menu">
                     <li class="containet__menu__link">
                         <a href="">O FIRMIE</a>
+                       <!-- <div class="cos"></div>-->
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__menu__item"><a href="">Aktualności</a></li>
+                            <li class="dropdown__menu__item"><a href="">Nasz team</a></li>
+                            <li class="dropdown__menu__item"><a href="">Historia</a></li>
+                        </ul>
                     </li>
                     <li class="containet__menu__link">
                         <a href="">GALERIA</a>
@@ -34,6 +40,7 @@
 
     <section class="main section_one">
         <div class="containet content">
+            <span class="slider"><</span>
             <div class="containet__img">
                 <img title="Black chair" alt="Black chair" src="images/black_chair.png">
             </div>
@@ -47,6 +54,7 @@
                     <button type="button">ZOBACZ WIĘCEJ</button>
                 </div>
             </div>
+            <span class="slider">></span>
         </div>
     </section>
 
@@ -126,17 +134,37 @@
             <div class="section__header">
                 <h4>KONTAKT</h4>
                 <span class="line"></span>
-
-                <div class="contact__inputs content">
-                    <input id="name" placeholder="Imię" type="text">
-
-                    <input id="mail" placeholder="email" type="email">
-
-                    <textarea id="message" placeholder="Wiamość" type="t"></textarea>
+                <div class="content">
+                    <div class="contact__inputs content">
+                        <input id="name" placeholder="Imię" type="text">
+                        <input id="mail" placeholder="email" type="email">
+                        <textarea id="message" placeholder="Wiamość"></textarea>
+                    </div>
+                    <div class="contact__submit">
+                        <img title="Red chair" alt="Red chair" src="images/red_chair.png">
+                        <form>
+                            <label>
+                                <input type="checkbox" name="send" checked>Zgadzam się na przetwarzanie danych osobwych
+                            </label>
+                        </form>
+                        <button type="button">WYŚLIJ</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="containet content foot">
+            <p>Copyright 2019 | All Rights Reserved. - Sit On Chait</p>
+            <div class="icon">
+                <img src="images/flickr.png">
+                <img src="images/vimeo.png">
+                <img src="images/pinterest.png">
+                <img src="images/twitter.png">
+            </div>
+            <p>SIT <span>ON </span>CHAIR</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -76,7 +76,6 @@ header {
 }
 
 
-
 h1 {
     color: white;
     font-size: 20px;
@@ -89,9 +88,63 @@ h1 {
 a {
     text-decoration: none;
     color: white;
-    margin-left: 15px;
+    margin-left: 50px;
     font-size: 20px;
 }
+
+.containet__menu__link {
+    position: relative;
+}
+
+
+/*.cos {
+    height: 0;
+    width: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: black;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    left: 70px;
+}*/
+
+
+.dropdown__menu {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: -20px;
+    list-style-type: none;
+    background: black;
+    border: 1px solid black;
+    /* margin-left: -40px; */
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: 2s;
+    opacity: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.dropdown__menu a {
+    margin: 0 10px 0 10px;
+}
+
+.containet__menu__link:hover > .dropdown__menu { /* > .drop aby odnośnił się do konkternego dziecka*/
+    max-height: 300px;
+    transition: 2s;
+    opacity: 1;
+}
+
+
+
+
 
 /*      END     HEAD       */
 
@@ -109,7 +162,10 @@ a {
     display: flex;
     justify-content: space-between;
 
+}
 
+.section_one .content {
+    padding-top: 30px;
 }
 
 .containet__img {
@@ -123,7 +179,7 @@ a {
     flex-direction: column;
     text-align: center;
     font-weight: 100;
-    margin-top: 50px;
+    margin: 50px 40px 0 0;
 }
 
 
@@ -140,8 +196,14 @@ button {
     width: 170px;
     height: 30px;
     margin-top: 30px;
-
 }
+
+.slider {
+    font-size: 100px;
+    color: #27C7AB;
+    padding-top: 100px;
+}
+
 
 /*      END     SECTION     ONE     */
 
@@ -445,7 +507,7 @@ sup {
 
 .contact {
     background-color: #ffffff;
-    height: 700px;
+    height: 550px;
 }
 
 .contact__inputs {
@@ -486,8 +548,77 @@ textarea {
 }
 
 input {
-    border-color: #27C7AB;
     height: 70px;
     font-family: raleway, sans-serif;
     padding: 10px 0 10px 10px;
+    border: 1px solid #27C7AB;
 }
+
+input[type=checkbox] + label {
+    display: block;
+
+}
+
+input[type=checkbox] {
+     display: none;
+ }
+
+input[type=checkbox] + label:before {
+    content: url("../images/form_ok.jpg");
+    border: 1px solid #27C7AB;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+
+form {
+    width: 250px;
+}
+
+
+.contact__submit button {
+    width: 340px;
+    height: 68px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.contact__submit img {
+    padding-left: 30px;
+}
+
+
+/*      END     SECTION     CONTACT     */
+
+
+
+
+/*      START          FOOTER     */
+
+footer {
+    height: 70px;
+}
+
+.foot {
+    position: relative;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+
+.icon {
+    position: absolute;
+    left: 650px;
+}
+
+footer p {
+    padding-top: 10px;
+    color: grey;
+}
+
