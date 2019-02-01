@@ -1,0 +1,111 @@
+header {
+  position: fixed;
+  width: 100%;
+  @include desktop {
+    position: static;
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+.containet__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.containet__menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  @include desktop {
+    display: flex;
+    background-color: transparent;
+    position: static;
+    height: auto;
+    width: auto;
+    overflow: visible;
+  }
+}
+
+
+h1 {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  @include desktop {
+    background-color: transparent;
+  }
+}
+.color {
+    color: #27C7AB;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.containet__menu__link {
+    position: relative;
+}
+
+
+/*.cos {
+    height: 0;
+    width: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: black;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    left: 70px;
+}*/
+
+
+.dropdown__menu {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: -20px;
+    list-style-type: none;
+    background: black;
+    border: 1px solid black;
+    /* margin-left: -40px; */
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: 2s;
+    opacity: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.dropdown__menu a {
+    margin: 0 10px 0 10px;
+}
+
+.containet__menu__link:hover > .dropdown__menu { /* > .drop aby odnośnił się do konkternego dziecka*/
+    max-height: 300px;
+    transition: 2s;
+    opacity: 1;
+}

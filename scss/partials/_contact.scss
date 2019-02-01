@@ -1,0 +1,86 @@
+
+.contact {
+    background-color: #ffffff;
+    height: 550px;
+}
+
+.contact__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 400px;
+    justify-content: space-between;
+    padding-top: 40px;
+
+}
+
+::-webkit-input-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+    font-size: 30px;
+
+}
+
+::-moz-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+
+}
+
+::-ms-input-placeholder {
+    color: lightgray;
+    font-family: raleway, sans-serif;
+
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+    border-color: #27C7AB;
+    font-family: raleway, sans-serif;
+    padding: 10px 0 10px 10px;
+}
+
+input {
+    height: 70px;
+    font-family: raleway, sans-serif;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #27C7AB;
+}
+
+input[type=checkbox] + label {
+    display: block;
+
+}
+
+input[type=checkbox] {
+     display: none;
+ }
+
+input[type=checkbox] + label:before {
+    content: url("../images/form_ok.jpg");
+    border: 1px solid #27C7AB;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+
+form {
+    width: 250px;
+}
+
+
+.contact__submit button {
+    width: 340px;
+    height: 68px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.contact__submit img {
+    padding-left: 30px;
+}
