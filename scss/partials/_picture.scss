@@ -1,0 +1,65 @@
+
+.section__galery {
+    display: flex;
+    margin: 30px 0 70px 0;
+}
+
+
+
+.chair {
+    width: 32%;
+    position: relative;
+
+}
+
+
+.chair span {
+    bottom: 68px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0 0 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.img__text {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.chair .line {
+    border-bottom: 7px solid #27C7AB;
+    width: 150px;
+    top: 133px;
+    left: 12px;
+
+}
+
+
+.all_inputs {
+    width: 32%;
+    border: 1px solid lightgray;
+    height: 260px;
+    position: relative;
+}
+
+
+h3 {
+    font-weight: bold;
+    padding: 25px 0 4px 15px;
+}
+
+.all_inputs .line {
+    position: absolute;
+    border-bottom: 7px solid #27C7AB;
+    width: 150px;
+    left: 15px;
+
+}
+
+.inputs {
+    padding: 15px 15px 0 15px;
+    color: grey;
+
+}
