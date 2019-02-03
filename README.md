@@ -1,5 +1,5 @@
 # First page
-Sit on chair - workshop
+Sit On Chair - workshop
 ## Technologies
 - HTML
 - Sass/CSS
