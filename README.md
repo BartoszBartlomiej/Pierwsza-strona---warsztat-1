@@ -1,1 +1,7 @@
-# Pierwsza-strona---warsztat-1
+# First page
+Sit On Chair - workshop
+## Technologies
+- HTML
+- Sass/CSS
+- JS
+- RWD
