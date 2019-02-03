@@ -1,18 +1,71 @@
 
+form {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
 .contact {
-    background-color: #ffffff;
+  background-color: #ffffff;
+  height: 890px;
+  @include desktop {
     height: 550px;
+  }
 }
 
 .contact__inputs {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    /*width: 32%;*/
     height: 400px;
     justify-content: space-between;
     padding-top: 40px;
+    margin: 0 5px;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0;
+    /*width: 32%;*/
+  }
 
 }
+
+
+
+.contact__submit button {
+  width: 310px;
+  height: 68px;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 5px 10px 5px;
+  @include desktop {
+    width: 340px;
+    margin: 53px 0 0 60px;
+  }
+}
+
+.contact__submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contact__submit img {
+  padding: 0 20px 0 20px;
+  /*width: 30%;*/
+  @include desktop {
+    width: 100%;
+    padding-left: 134px;
+    /*width: 30%;*/
+
+  }
+
+}
+
 
 ::-webkit-input-placeholder {
     color: lightgray;
@@ -41,46 +94,46 @@ textarea {
     padding: 10px 0 10px 10px;
 }
 
-input {
+.contact__inputs input {
     height: 70px;
     font-family: raleway, sans-serif;
     padding: 10px 0 10px 10px;
     border: 1px solid #27C7AB;
 }
 
-input[type=checkbox] + label {
-    display: block;
 
-}
-
-input[type=checkbox] {
-     display: none;
- }
-
-input[type=checkbox] + label:before {
-    content: url("../images/form_ok.jpg");
-    border: 1px solid #27C7AB;
-    width: 10px;
-    height: 10px;
+.contact__submit {
+  position: relative;
+  label {
+    margin: 30px 0 0 85px;
+    width: 230px;
+    @include desktop {
+      margin: 30px 0 0 160px;
+      width: 230px;
+    }
+  }
 }
 
 
-
-
-
-form {
-    width: 250px;
+#check {
+  display: none;
 }
 
-
-.contact__submit button {
-    width: 340px;
-    height: 68px;
-    font-size: 40px;
-    font-weight: bold;
+.checkmark {
+  position: absolute;
+  top: 235px;
+  left: 14px;
+  height: 50px;
+  width: 52px;
+  border: 1px solid #27c7ab;
+  @include desktop {
+    top: 235px;
+    left: 80px;
+  }
 }
 
-
-.contact__submit img {
-    padding-left: 30px;
+#check:checked ~ .checkmark {
+  background-image: url("../images/form_ok.jpg");
+  background-size: cover;
+  background-position: center center;
 }

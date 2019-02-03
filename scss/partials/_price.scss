@@ -1,13 +1,19 @@
 .price__list {
     background-color: #eaeaea;
+    height: 1870px;
+  @include desktop {
     height: 700px;
+  }
 
 }
 
 h4 {
-    padding: 50px 0 0 0;
+    padding: 50px 0 0 5px;
     font-size: 25px;
     color: #737373;
+    @include desktop {
+      padding: 50px 0 0 0;
+  }
 }
 
 
@@ -26,6 +32,10 @@ h4 {
 .price__boards {
     padding-top: 70px;
     display: flex;
+    flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 
@@ -33,11 +43,16 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32%;
+    /*width: 32%;*/
     height: 500px;
     border: 2px solid lightgray;
     background-color: #f8f8f8;
     position: relative;
+    margin: 15px 5px 70px 5px;
+  @include desktop {
+    width: 32%;
+    margin: 15px 0 70px 0;
+  }
 }
 
 
@@ -45,10 +60,14 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32%;
+    /*width: 32%;*/
     height: 500px;
     border: 2px solid #27C7AB;
     background-color: #27C7AB;
+  @include desktop {
+    width: 32%;
+    margin: 15px 0 70px 0;
+  }
 }
 
 

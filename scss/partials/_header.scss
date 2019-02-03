@@ -1,6 +1,7 @@
 header {
   position: fixed;
   width: 100%;
+  z-index: 1000;
   @include desktop {
     position: static;
     width: auto;
@@ -14,13 +15,13 @@ header {
 
 
 
-
-
 .containet__head{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 40px;
+  background-color: black;
+
 }
 
 .containet__menu {
@@ -44,8 +45,10 @@ h1 {
   color: white;
   font-size: 20px;
   background-color: black;
+  padding-left: 5px;
   @include desktop {
     background-color: transparent;
+    padding-left: 0;
   }
 }
 .color {

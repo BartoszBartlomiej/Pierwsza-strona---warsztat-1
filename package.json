@@ -1,8 +1,14 @@
 {
   "name": "pierwsza-strona---warsztat-1",
   "version": "1.0.0",
-  "description": "Projekt",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +21,5 @@
   "bugs": {
     "url": "https://github.com/BartoszBartlomiej/Pierwsza-strona---warsztat-1/issues"
   },
-  "homepage": "https://github.com/BartoszBartlomiej/Pierwsza-strona---warsztat-1#readme",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4"
-  }
+  "homepage": "https://github.com/BartoszBartlomiej/Pierwsza-strona---warsztat-1#readme"
 }

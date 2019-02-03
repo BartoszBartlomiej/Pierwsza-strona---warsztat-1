@@ -38,7 +38,7 @@
 
 
     <section class="main section_one">
-        <!--<span class="slider"><</span>-->
+        <span class="slider"><</span>
         <div class="containet content">
             <div class="containet__img">
                 <img title="Black chair" alt="Black chair" src="images/black_chair.png">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <!--<span class="slider">></span>-->
+        <span class="slider">></span>
     </section>
 
 
@@ -133,8 +133,9 @@
             <div class="section__header">
                 <h4>KONTAKT</h4>
                 <span class="line"></span>
-                <div class="content">
-                    <div class="contact__inputs content">
+                <!--<div class="content">-->
+                    <form>
+                    <div class="contact__inputs">
                         <input id="name" placeholder="Imię" type="text">
                         <input id="mail" placeholder="email" type="email">
                         <textarea id="message" placeholder="Wiamość"></textarea>
@@ -142,28 +143,44 @@
                     <div class="contact__submit">
                         <img title="Red chair" alt="Red chair" src="images/red_chair.png">
                         <form>
-                            <label>
-                                <input type="checkbox" name="send" checked>Zgadzam się na przetwarzanie danych osobwych
+                            <label for="check">
+                                <input id="check" type="checkbox" name="send" checked>Zgadzam się na przetwarzanie danych osobwych
+                                <span class="checkmark"></span>
                             </label>
-                        </form>
+                        <!--</form>-->
                         <button type="button">WYŚLIJ</button>
+                    </form>
                     </div>
-                </div>
+                    </form>
+                        <!--</div>-->
             </div>
         </div>
     </section>
 
     <footer>
         <div class="containet content foot">
-            <p>Copyright 2019 | All Rights Reserved. - Sit On Chait</p>
+            <p class="copyrigth">Copyright 2019 | All Rights Reserved. - Sit On Chait</p>
             <div class="icon">
-                <img src="images/flickr.png">
-                <img src="images/vimeo.png">
-                <img src="images/pinterest.png">
-                <img src="images/twitter.png">
+                <img alt="social media" title="flickr" src="images/flickr.png">
+                <img alt="social media" title="vimeo" src="images/vimeo.png">
+                <img alt="social media" title="pinterets" src="images/pinterest.png">
+                <img alt="social media" title="twitter" src="images/twitter.png">
             </div>
             <p>SIT <span>ON </span>CHAIR</p>
         </div>
     </footer>
+
+<!--
+                                    _   ,
+            (HAVE A NICE DAY) -====;o`\/ }
+                                     \-'\-'----.
+                                      \ |-..-'`
+                                      /\/\
+                                      `--`
+
+                                             B.L
+-->
+
+
 </body>
 </html>
