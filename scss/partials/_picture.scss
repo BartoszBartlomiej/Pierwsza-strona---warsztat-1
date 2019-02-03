@@ -8,7 +8,9 @@
   }
 }
 
+.hide {
 
+}
 
 .chair {
    /* width: 32%;*/
@@ -44,12 +46,8 @@
 .chair .line {
     border-bottom: 7px solid #27C7AB;
     width: 150px;
-    top: 135px;
+    top: -10px;
     left: 12px;
-  @include desktop{
-    top: 123px;
-    left: 12px;
-  }
 
 }
 
